@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@RequestMapping(path="api/v1/client")
+@RequestMapping(path="api/client")
 public class ClientController {
     private final ClientService clientService;
 
@@ -18,8 +18,8 @@ public class ClientController {
     }
 
     @GetMapping
-    public List<Client> getStudents()
+    public List<Client> getClients()
     {
-return clientService.getStudents();
+return clientService.getClients();
     }
 }

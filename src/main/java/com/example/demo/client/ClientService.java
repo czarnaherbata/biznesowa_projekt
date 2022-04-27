@@ -8,7 +8,7 @@ import java.util.List;
 @Service
 public class ClientService {
 
-    public List<Client> getStudents()
+    public List<Client> getClients()
     {
 
         return List.of(
